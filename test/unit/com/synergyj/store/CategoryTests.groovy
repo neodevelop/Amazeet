@@ -11,7 +11,19 @@ import org.junit.*
 @TestFor(Category)
 class CategoryTests {
 
-    void testSomething() {
-
+    void testSaveCategory() {
+      mockDomain(Category)
+      // mockDomain(Class, [])
+      def category = new Category(name:"Category name",description:"This is the description of the category")
+      assert category.save()
+      assert category.id > 0
+    }
+    
+    void testSaveInvalidCategory() {
+      mockDomain(Category)
+      // mockDomain(Class, [])
+      def category = new Category(name:"Category name",description:"This is the description")
+      assert !category.save()
+      assert !category.id
     }
 }
