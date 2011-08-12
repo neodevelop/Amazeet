@@ -1,6 +1,6 @@
 package com.synergyj.store
 
-class Order {
+class OrderCart {
   
   OrderStatus orderStatus
   ShoppingCart shoppingCart

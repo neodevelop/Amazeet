@@ -10,7 +10,7 @@ class Payment {
   Date dateCreated
   Date lastUpdated
   
-  static belongsTo = [order:Order]
+  static belongsTo = [orderCart:OrderCart]
 
   static constraints = {
     amount nullable:false, blank:false
