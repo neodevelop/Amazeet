@@ -18,6 +18,6 @@ class Product {
     technicalDetails nullable:false,blank:false,size:1..1000
     sku nullable:false,blank:false,unique:true,size:5..15
     price blank:false
-    photo nullable:true
+    photo nullable:true,maxSize:1024*1024*5
   }
 }
