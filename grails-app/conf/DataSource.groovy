@@ -25,8 +25,13 @@ environments {
     }
     production {
         dataSource {
+            pooled = true
             dbCreate = "update"
-            url = "jdbc:h2:prodDb"
+            url = "jdbc:mysql://localhost/amazeet"
+            driverClassName = "com.mysql.jdbc.Driver"
+            dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+            username = "root"
+            password = ""
         }
     }
 }

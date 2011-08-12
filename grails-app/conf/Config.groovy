@@ -62,8 +62,10 @@ environments {
         grails.logging.jul.usebridge = true
     }
     production {
+        // Disabled loggging
         grails.logging.jul.usebridge = false
-        grails.serverURL = "http://www.changeme.com"
+        // We use a url for production environment
+        grails.serverURL = "http://localhost:8080/Amazeet"
     }
 }
 
