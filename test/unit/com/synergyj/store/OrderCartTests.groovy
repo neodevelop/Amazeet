@@ -8,7 +8,7 @@ import org.junit.*
 /**
  * See the API for {@link grails.test.mixin.domain.DomainUnitTestMixin} for usage instructions
  */
-@TestFor(Order)
+@TestFor(OrderCart)
 class OrderCartTests {
 
     void testSomething() {
