@@ -1,12 +1,18 @@
 package com.synergyj.store
 
 class StoreController {
+  
+  def beforeInterceptor = {
+    // Podemos usar interceptores beforeInterceptor, afterInterceptor
+    log.debug "Controller ${controllerName}: Hola mundo en ${actionName}"
+  }
 
   def index(){
     // Aquí buscaremos nuestro catalogo de productos, nuestras categorias
-    // los articulos que tenemos en nuestro carrito, 
-    log.debug "Controller ${controllerName}: Hola mundo en ${actionName}"
-    render "Hola mundo"
+    // los articulos que tenemos en nuestro carrito
+    def products = Product.list()
+    def categories = Category.list()
+    [products:products,categories:categories]
   }
   
   def reviewItem = {

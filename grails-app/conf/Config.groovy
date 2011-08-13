@@ -94,7 +94,7 @@ log4j = {
     warn   'org.mortbay.log'
     
     debug  'grails.app.controllers'
-    debug  'grails.app.taglib'
+    debug  'grails.app.taglib.com.synergyj.store'
     debug  'grails.app.services.com.synergyj.store'
     debug  'grails.app.domain'
     debug  'grails.app.conf'
