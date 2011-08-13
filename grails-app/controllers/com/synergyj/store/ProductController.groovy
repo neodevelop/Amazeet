@@ -6,6 +6,13 @@ class ProductController {
 
   static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
+  def showImage = {
+    def product = Product.get(params.id)
+    response.contentType = 'image/jpeg'
+    response.outputStream << product.photo
+    response.outputStream.flush()
+  }
+
   def index() {
     redirect(action: "list", params: params)
   }

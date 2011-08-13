@@ -14,6 +14,9 @@
   <thead>
     <tr>
       <td>
+        <b>${message(code: 'product.label', default: 'Product')}</b>
+      </td>
+      <td>
         <b>${message(code: 'product.name.label', default: 'Name')}</b>
       </td>
       <td>
@@ -24,11 +27,11 @@
   <tbody>
     <g:each in="${products}" var="product">  
     <tr>
+      <td>
+        <store:showProduct id="${product.id}" size="small"/>
+      </td>
       <td>${product.name}</td>
       <td>$ ${product.price}</td>
-      <td>
-        &nbsp;
-      </td>
     </tr>
   </g:each>
   </tbody>  
