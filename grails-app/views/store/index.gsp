@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <meta name="layout" content="main">
   <title>. : Welcome to the SynergyJ - Store : .</title>
 </head>
 <body>
