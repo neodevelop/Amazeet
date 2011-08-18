@@ -5,10 +5,7 @@
   <title>Store</title>
 </head>
 <body>
-  <h1>Nuestras categorías</h1>
-  <g:each in="${categories}" var="category">
-  ${category.name}<br/>
-  </g:each>
+
   <h2>Nuestros productos</h2>
 
   <g:each in="${products}" var="product">  
@@ -27,11 +24,5 @@
   <div style="clear: both;">&nbsp;</div>
   </g:each>
 
-<g:if test="${session.shoppingCart}">
-<h3>Ya estás comprando en la tienda</h3>
-</g:if>
-<g:else>
-<h3>Aún no has agregado ningún producto al carrito</h3>
-</g:else>
 </body>
 </html>
