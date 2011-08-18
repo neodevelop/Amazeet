@@ -23,6 +23,7 @@ class StoreController {
   
   def addItem(){
     // Buscar el objeto y ponerlo en el carrito
+    // Posible refactor para el beforeInterceptor, no?
     if(!session.shoppingCart)
       session.shoppingCart = new ShoppingCart(shoppingCartStatus:ShoppingCartStatus.SHOPPING)
     def product = Product.get(params.id)
