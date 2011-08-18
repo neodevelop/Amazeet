@@ -71,6 +71,46 @@ class BootStrap {
               price:150.00,
               photo:new File("images/memoria_synergyj1.jpg").bytes
             ).save()
+            def p7 = new Product(
+              name:"Memoria: SynergyJ.com",
+              description:"Lleva todos tus archivos contigo, resguarda los laboratoros de tus clases",
+              technicalDetails:"Memoria Kingston de 8GB",
+              sku:"MEMORY2011",
+              price:150.00,
+              photo:new File("images/memoria_synergyj2.jpg").bytes
+            ).save()
+            def p8 = new Product(
+              name:"Memoria: SynergyJ.com",
+              description:"Lleva todos tus archivos contigo, resguarda los laboratoros de tus clases",
+              technicalDetails:"Memoria Kingston de 8GB",
+              sku:"MEMORY2012",
+              price:150.00,
+              photo:new File("images/memoria_synergyj3.jpg").bytes
+            ).save()
+            def p9 = new Product(
+              name:"T-shirt No-hacker",
+              description:"Playera edición 2011 de filosofía anti-hacker",
+              technicalDetails:"Disponible en tallas CH, M, X y XL. Impresión vinilo en tela.",
+              sku:"NOHACKER2011",
+              price:220.00,
+              photo:new File("images/playera_nohacker.jpg").bytes
+            ).save()
+            def p10 = new Product(
+              name:"Pin GrailsMX",
+              description:"Pin de la comunidad GrailsMX 2011",
+              technicalDetails:"Lleva contigo un detalle distinguido y elegante, se parte de la comunidad de una forma discreta pero elegante",
+              sku:"PINGRAILSMX2011",
+              price:30.00,
+              photo:new File("images/pin_grailsmx.jpg").bytes
+            ).save()
+            def p11 = new Product(
+              name:"Pin SpringHispano",
+              description:"Pin de la comunidad SpringHispano 2011",
+              technicalDetails:"Lleva contigo un detalle distinguido y elegante, se parte de la comunidad de una forma discreta pero elegante",
+              sku:"PINSH2011",
+              price:30.00,
+              photo:new File("images/pin_sh.jpg").bytes
+            ).save()
           }
         }
       }
